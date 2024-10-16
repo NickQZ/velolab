@@ -8,7 +8,8 @@
 ## Velolab Website
 
 I have been tasked with developing a new, modern looking website for the company Velolab.
-Authors
+
+## Authors
 
 - @NickQZ (https://github.com/NickQZ)
 
