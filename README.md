@@ -23,39 +23,37 @@ Documentation
 
 Current Site: Home Page:
 
-![image](https://github.com/user-attachments/assets/ad56eaf4-e4c5-4572-99a1-b0eb740e6a22)
+![image](https://github.com/user-attachments/assets/803e6e68-528c-4dba-86c2-43132dfe223a)
+
 
 
 About Us Page:
 
-![image](https://github.com/user-attachments/assets/7e65b2d4-4a61-4345-b540-1fac22477cfc)
+![image](https://github.com/user-attachments/assets/f41daf50-743c-4596-8674-927fba700e91)
+
 
 
 Coaching Options Page:
 
-![image](https://github.com/user-attachments/assets/d0ece786-93ea-480c-a613-7e601ff6a813)
+![image](https://github.com/user-attachments/assets/efc15bae-ba36-4823-a972-fb775ba6feb2)
 
 
 Contact Us:
 
-![image](https://github.com/user-attachments/assets/90e1cff6-d9c5-4d72-bec6-fee828e534f0)
+![image](https://github.com/user-attachments/assets/e9c7c6f1-6265-455a-b049-9e79cf0132ba)
+
 
 The existing website design was outdated and required a comprehensive redesign. Velolab© approached me to develop a modern aesthetic for the company's website. Below are the design concepts I created using Canva ©.
 
 ## Mock Designs:
 
-![image](https://github.com/user-attachments/assets/172b4886-fc34-447a-81cc-bb2e297eaf2e)
-
-![image](https://github.com/user-attachments/assets/48076ab7-a7c4-4c0c-bc7e-7e2a7314dade)
-
-![image](https://github.com/user-attachments/assets/4030c4a9-fbdb-458f-a2e6-ed4e8c813375)
-
-![image](https://github.com/user-attachments/assets/4edbea12-fe76-441d-8963-2a5f29eb9979)
-
-![image](https://github.com/user-attachments/assets/2ab18500-f5db-4ac7-8b08-cb87d2c30bcf)
-
-![image](https://github.com/user-attachments/assets/e0ae6130-5144-4b2f-b692-88a68c3f0580)
-
+![image](https://github.com/user-attachments/assets/334a5d37-2bf1-46a4-8721-559fe4044872)
+![image](https://github.com/user-attachments/assets/4d83526d-7e65-4386-a43e-b9c46367e26a)
+![image](https://github.com/user-attachments/assets/8c8620d2-d808-4948-b021-c993b5360612)
+![image](https://github.com/user-attachments/assets/eea56f07-8d0b-4123-8561-59f5b5fb6f06)
+![image](https://github.com/user-attachments/assets/20ea5f99-5f12-4973-a0e6-32f32ba7bda1)
+![image](https://github.com/user-attachments/assets/554a3d13-2449-42c3-8dbe-cfdcbe1d389b)
+![image](https://github.com/user-attachments/assets/152bc6ba-be51-4021-8d6a-d1584da46487)
 
 
 All the proposed designs were presented to the client, who approved them with the stipulation that all images from the original site be reintegrated into the new layout.
