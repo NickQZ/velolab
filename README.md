@@ -4,8 +4,8 @@
 
 ## WEBSITE LIVE
 
-- https://nickqz.github.io/velolab/ 
-
+- https://nickqz.github.io/velolab/
+  
 ## Velolab Website
 
 I have been tasked with developing a new, modern looking website for the company Velolab.
