@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<!--Velolab Version 5.1  DATE: 23.11.2024-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Velolab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+        <!-- Basic Nav -->
+        <nav id="desktop-nav">
+            <div class="logo">Velolab</div>
+            <ul class="nav-links">
+                <li><a href="#our-mission">Our Mission</a></li>
+                <li><a href="#who-are-we">Who Are We</a></li>
+                <li><a href="#what-our-clients-say">What Our Clients Say</a></li>
+                <li><a href="#coaching-options">Coaching Options</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="https://home.trainingpeaks.com/login.aspx" target="_blank">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger Nav -->
+        <nav id="hamburger-nav">
+            <div class="logo">Velolab</div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#who-are-we">Who Are We</a></li>
+                <li><a href="#what-our-clients-say">What Our Clients Say</a></li>
+                <li><a href="#coaching-options">Coaching Options</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="https://home.trainingpeaks.com/login.aspx" target="_blank">Login</a></li>
+            </ul>
+        </nav>
+
+
+        <!--Home Page-->
+        <section id="hero">
+            <div class="hero_pic_container">
+                <div class="gradient-overlay-right"></div>
+
+                <img src="./images/page1.jpg" alt="PAGE 1 IMAGE"/>
+                <div class="text_page1">
+
+                    <h1>Welcome to Velolab</h1>
+
+                    <h2>Qualified training & coaching services</h2>
+
+                    <a href="#contact-us" class="btn-pg1">Join us</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Our Mission-->
+        <section id="our-mission">
+            <div class="mission_pic_container">
+                <div class="gradient-overlay-left"></div>
+                <img src="./images/page2.jpeg" alt="PAGE 2 IMAGE"/>
+                <div class="text_page2">
+                    <h1>Our Mission</h1>
+
+                    <p>At Velolab we are passionate cyclists and seasoned coaches dedicated to helping you  reach your cycling goals. Whether your a beginner looking to ride your first century or an experienced athlete preparing for a race, we offer tailored strategies to evaluate your performance and help you reach your goals.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Who Are We-->
+        <section id="who-are-we">
+            <div class="who-are-we">
+                
+                <h1>Who Are We</h1>
+
+                <div class="profile-wrapper">
+                    <div class="micheal-jones">
+                        <img src="./images/Michael_Jones_Pic.jpg" alt="Michael Jones Photo"/>
+                        <h2>Micheal Jones</h2>
+
+                        <p>Michael has been competing in national and provincial road cycling events since the age of 23. During this time he has podiumed at nationals & provincials in South Africa in both road and time trial cycling disciplines and in road at New Zealand nationals. He has had the privilege to represent New Zealand in the 2015 and 2016 UCI Grand Fondo World Amateur Cycling Championships.<br><br>
+                        During his years of racing at Elite level he was also studying and then later working full time, so he understands what is required to gain the most within limited time constraints.
+                        Michael has undertaken Level 1 and 2 BikeNZ Cycling Coaching courses and uses the knowledge and 8 years of coaching experience, in conjunction with his training, racing and technical experience, to provide individualized training programmes.</p>
+                    </div>
+                    
+                    <div class="john-rich">
+                        <img src="./images/John_Rich_Pic.jpg" alt="Michael Jones Photo"/>
+                        <h2>John Rich</h2>
+
+                        <p>John has a solid academic background, holding a degree in recreation management, and a Masters of Applied Science with honours in recreation management from Lincoln University. He has also undertaken Level 1 and 2 BikeNZ Cycling Coaching courses. John has also been coaching cycling for 8 years, and competing in road cycling for over 20 years.<br><br>
+                        John currently competes at masters level and over the years has achieved good finishes at most of New Zealand’s better known cycling races. He also regularly competes in endurance running events. He has a particular interest in nutrition and sports psychology, and their value to athletes of any ability.
+                        He currently coaches road cycling at all levels, including masters, juniors, male and female, and also works with Paralympic hand cyclists, providing individualized training programmes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--What Our Clients Say-->
+        <section id="what-our-clients-say">
+            <div class="testimonials">
+                
+                <div class="inner">
+                    <h1>What Our Clients Say</h1>
+
+                    <div class="border"></div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="testimonial">
+                                <img src="images\client-1.png" alt="Client 1">
+                                <div class="name">John Smith</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>"Investing in training is investing in our future; the skills we gain today empower us to excel tomorrow."</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="testimonial">
+                                <img src="images\client-2.png" alt="Client 2">
+                                <div class="name">Jane Doe</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>"The knowledge we acquire through training not only enhances our capabilities but also transforms challenges into opportunities."</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="testimonial">
+                                <img src="images\client-3.png" alt="Client 2">
+                                <div class="name">Jane Doe</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>"Training is the bridge that connects potential with performance; it equips us with the tools to thrive in an ever-evolving business landscape."</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!--Our Services-->
+                <section id="coaching-options">
+                    <div class="services">
+                        
+                        <div class="inner">
+                            <h1>Coaching Options</h1>
+        
+                            <div class="border"></div>
+        
+                            <div class="row">
+                                <div class="service-col">
+                                    <div class="service">
+                                        <img src="images\training.jpg" alt="Service option 1">
+                                        <div class="service-title"><h3>Initial Assessment<br>(2 hour session):</h3></div>
+                                        <ul>
+                                            <li>Max Heart Rate Establishment</li>
+                                            <li>Peak Power</li>
+                                            <li>Build Personal Profile</li>
+                                            <li>Set Goals and Develop Annual Training Plan</li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <div class="service-col">
+                                    <div class="service">
+                                        <img src="images/training-2.jpg" alt="Additional Services">
+                                        <div class="service-title"><h3>Additional Services:</h3></div>
+                                        <ul>
+                                            <li>Online Interactive Training Programme</li>
+                                            <li>Ongoing Communication and Feedback (Customer Initiated)</li>
+                                            <li>Racing Tactics / Strategy</li>
+                                            <li>Preferential Opportunity to Join Velolab Tours and Events</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="one-off-offers">
+                                <h4>Other One-Off Services</h4>
+                                <p>Please <a href="#contact-link">contact</a> John or Mike at Velolab to discuss other services and to quote specific requirements.
+                                    We are happy to offer something to suit your exact needs.</p>
+                            </div>
+                        </div>
+                        
+                    <div class="outter">
+                        <h4>Pricing</h4>
+                        <p>Summary and prices for coaching provided by Velolab:<br> $35 per week</p>
+                        <p><i>Minimum Membership Length: 4 Months</i></p>
+                        <a href="#contact-link" class="btn-pricing">Join Now</a>
+                    </div>
+
+
+                </section>
+
+        <!--Ready to Ride?-->
+
+        <section id="ready-to-ride">
+            <div class="ready_to_ride">
+                <div class="video_container">
+                    <video autoplay muted loop>
+                        <source src="video\video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text_ready_to_ride">
+                    <h1>Ready to ride?</h1>
+                    <h3>Get started with Velolab today</h3>
+                    <a href="#contact-us" class="btn-ride">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Us-->
+
+        <section id="contact-us">
+            <div class="contact">
+                <div class="inner">
+                    <h1>Get in touch</h1>
+                    <div class="border"></div>
+
+                    <div class="row">
+                        <div class="contact-col">
+                            <div class="contact-info">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h5>Address</h5>
+                                    <link href="https://www.google.com/maps?ll=-37.062609,175.525536&z=15&t=m&hl=en&gl=NZ&mapclient=embed&q=7+Adams+Road+RD5+Thames+3575" target="_blank"><p>Adams Road<br>Thornton Bay, RD5<br>Thames, New Zealand</p></link>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-col">
+                            <div class="contact-info">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <h6>Coaches Contact Details</h6>
+                                    <p>John Rich: 027 4902 632</p>
+                                    <p>Michael Jones: 027 3100 527</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-col">
+                            <div class="contact-info">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <button id="email" target="_blank"><p>enquiries@velolab.co.nz</p></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Map-->
+        <section id="map">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.7848858847433!2d175.5206651941467!3d-37.062609100425306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d72860caf2f2aa9%3A0x3c8f5d0197253f3e!2s7%20Adams%20Road%2C%20RD5%2C%20Thames%203575!5e0!3m2!1sen!2snz!4v1729483517564!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!--Footer-->
+
+        <footer>
+            <div class="footer">
+                <div class="footer-logo">
+                    Velolab
+                </div>
+                <div class="footer-list">
+                    <ul>
+                        <li><a href="#our-mission">Our Mission</a></li>
+                        <li><a href="#who-are-we">Who Are We</a></li>
+                        <li><a href="#what-our-clients-say">What Our Clients Say</a></li>
+                        <li><a href="#our-services">Coaching Options</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/velolabnz/?fref=ts" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <!-- Commented Out for the present time.
+                        <li><a href="https://www.instagram.com/velolabnz/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/velolabnz" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="top hidden" id="back-to-top">Back to Top <img src="./images/arrow_upwards.png" alt="Arrow"></a>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
