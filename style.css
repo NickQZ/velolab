@@ -101,52 +101,57 @@ a:hover{
 /*--------------------------------------------- HAMBURGER MENU ---------------------------------------------*/
 
 #hamburger-nav {
-    display: none;
-  }
-  
-  .hamburger-menu {
-    position: flex;
+    display: none; /* Show this only on mobile */
+}
+
+.hamburger-menu {
+    position: relative;
     display: inline-block;
-    align-items: left;
-    padding-left: 100px;
-  }
-  
-  .hamburger-icon {
+    padding-left: 20px; /* Adjusted padding */
+}
+
+.hamburger-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
     width: 30px;
     cursor: pointer;
-  }
+}
 
-  .hamburger-icon span {
+.hamburger-icon span {
     width: 100%;
     height: 2px;
     background-color: white;
-    transition: all 0.3 ease-in-out;
-  }
+    transition: all 0.3s ease-in-out; /* Added 's' for seconds */
+}
 
-  .menu-links {
-    display: none; 
-    position: absolute; 
-    top: 50px; 
-    padding-right: 30px;
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0; /* Align to the right */
+    padding: 0;
     text-align: right;
-    background-color: black; 
-    width: 100%; 
-    list-style: none; 
-    z-index: 10; 
+    background-color: black;
+    width: 100%;
+    list-style: none;
+    z-index: 10;
 }
 
 .menu-links.open {
-    display: block; 
+    display: block;
 }
 
 .menu-links a {
-    display: block; 
-    padding: 20px; 
-    color: white; 
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none; /* Added for better UX */
+}
+
+.menu-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
 }
 
   /*--------------------------------------------- Open hamburger animation ---------------------------------------------*/
