@@ -1,6 +1,23 @@
-/*Velolab Version 5.1 DATE: 23.11.2024*/
+/*Velolab Version 5.1  DATE: 31.10.2024
+ADJUSTED WHO ARE WE SECTION TO BE MORE RESPONSIVE AND BE MORE READABLE ON MOBILE DEVICES, CENTERED, GET IN TOUCH SECTION AND FOOTER  
+*/
+
+/*--------------------------------------------- CSS INDEX ---------------------------------------------*/
+
+/* 1. General Styling
+    2. NAVIGATION
+    3. Page 1 - Our Mission
+    4. Page 2 - Who Are We
+    5. Page 3 - What Our Clients Say
+    6. Page 4 - Testimonials
+    7. Page 5 - Contact Us
+    8. FOOTER
+
+/*--------------------------------------------- Google Fonts ---------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*--------------------------------------------- General Styling ---------------------------------------------*/
 
 * {
     padding: 0;
@@ -8,7 +25,8 @@
     box-sizing: border-box;
 }
 
-/* Body Sizing */
+/*---------------------------------------------Body Styling --------------------------------------------- */
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: black;
@@ -32,7 +50,8 @@ p {
     cursor: default;
 }
 
-/* Transition */
+/*--------------------------------------------- NAVIGATION Transitions --------------------------------------------- */
+
 a, .btn{
     transition: all 300ms ease;
 }
@@ -63,7 +82,24 @@ a:hover{
     color:  #ff6900;
 }
 
-/* HAMBURGER MENU */
+.login-btn {
+    position: inline;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 8px;
+    background-color: #ff6900; 
+    color: rgb(0, 0, 0); 
+    border-radius: 50px;
+    transition: background-color 300ms ease;
+}
+    
+.login-btn:hover {
+    background-color: black;
+    color: #ff6900;
+}
+    
+
+/*--------------------------------------------- HAMBURGER MENU ---------------------------------------------*/
 
 #hamburger-nav {
     display: none;
@@ -114,7 +150,8 @@ a:hover{
     color: white; 
 }
 
-  /* Open hamburger animation */
+  /*--------------------------------------------- Open hamburger animation ---------------------------------------------*/
+
   .hamburger-icon.open span:first-child{
     transform: rotate(45deg) translate(10px, 5px);
   }
@@ -127,7 +164,7 @@ a:hover{
     transform: rotate(-45deg) translate(10px, -5px);
   }
 
-/* Close hamburger animation */
+/*--------------------------------------------- Close hamburger animation ---------------------------------------------*/
 
   .hamburger-icon span:first-child {
     transform: none;
@@ -142,7 +179,8 @@ a:hover{
   }
 
 
-/*Gradient Overlay for right*/
+/*--------------------------------------------- Gradient Overlay for right ---------------------------------------------*/
+
 .gradient-overlay-right {
     position: absolute;
     top: 0;
@@ -153,7 +191,8 @@ a:hover{
     z-index: 1; 
 }
 
-/*Gradient Overlay for left*/
+/*--------------------------------------------- Gradient Overlay for left ---------------------------------------------*/
+
 .gradient-overlay-left {
     position: absolute;
     top: 0;
@@ -163,7 +202,6 @@ a:hover{
     background: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     z-index: 1; 
 }
-
 
 .hero_pic_container, .mission_pic_container, .who-are-we {
     position: relative; 
@@ -183,7 +221,8 @@ a:hover{
     z-index: 2; 
 }
 
-/* Page1 */
+/*--------------------------------------------- Page 1 - Hero Page ---------------------------------------------*/
+
 .hero_pic_container {
     display: flex;
     justify-content: right;
@@ -246,7 +285,7 @@ a:hover{
     border-color: #ff6900;;
 }
 
-/* Page 2 */
+/*--------------------------------------------- Page 2 - Our Mission--------------------------------------------- */
 
 .mission_pic_container {
     display: flex;
@@ -287,77 +326,14 @@ a:hover{
     text-align: justify;
 }
 
-/* Who Are We */
+/*--------------------------------------------- Page 3 - Who Are We--------------------------------------------- */
 
-.who-are-we {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100vh;
-    text-align: center;
-    padding: 20px;
-}
-
-.who-are-we h1 {
-    color: #ff6900;
-    font-size: 3rem;
-    margin: 0;
-    padding: 10px;
-    top: 5%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.profile-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.micheal-jones, .john-rich {
-    margin: 0 20px;
-    text-align: center;
-}
-
-
-.micheal-jones h2, .john-rich h2 {
-    color: #ff6900;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.micheal-jones img, .john-rich img {
-    max-width: 400px;
-    padding: 1rem;
-    max-height: 100%;
-    align-items: right;
-    z-index: 2; 
-    border-radius: 50px;
-}
-
-
-.micheal-jones p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: justify;
-    padding: 2;
-}
-
-.john-rich p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: justify;
-    padding: 2;
-}
-
-/* Page 3 - Testimonials */
-.testimonials {
+.about-us {
     padding: 20px 0;
-    background-color: #1b1b1b;
-    color: #434343;
-    text-align: center;
+    background-color: #0b0b0b;
+    color: #302f2f;
+    text-align: justify;
+    word-spacing: 3px;
 }
 
 .inner {
@@ -394,12 +370,46 @@ a:hover{
     flex: 33.33%;
     max-width: 33.33%;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 20px;
 }
 
 .col:hover {
     transform: translateY(-50px);
     transition: 0.2s ease-in-out;
+}
+
+.about-us-text {
+    background-color: #111111f0;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.about-us img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.about-us-text p {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.coach-name {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: #ff6900;
+}
+
+/*--------------------------------------------- Page 4 - Testimonials--------------------------------------------- */
+
+.testimonials {
+    padding: 20px 0;
+    background-color: #1b1b1b;
+    color: #434343;
+    text-align: center;
 }
 
 .testimonial {
@@ -430,7 +440,7 @@ a:hover{
     margin: 0;
 }
 
-/* Page 4 - Coaching Options */
+/*--------------------------------------------- Page 5 - Coaching Options--------------------------------------------- */
 
 .services {
     padding: 20px 0;
@@ -448,7 +458,7 @@ a:hover{
 
 .service-col{
     flex: 50%;
-    max-width: 70%;
+    max-width: 80%;
     box-sizing: border-box;
     padding: 15px;
 }
@@ -465,9 +475,9 @@ a:hover{
 }
 
 .service img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10%;
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
 }
 
 .service-title h3{
@@ -487,7 +497,7 @@ a:hover{
     list-style-type: square;
 }
 
-/* Pricing */
+/*--------------------------------------------- Page 6 - Pricing--------------------------------------------- */
 
 .outter h4 {
    color: #ff6900;
@@ -528,7 +538,7 @@ a:hover{
     color: #ff6900;
 }
 
-/* One Off Offers */
+/*--------------------------------------------- Page 7 - One Off Offers--------------------------------------------- */
 
 .one-off-offers {
     max-width: 1200px;
@@ -553,7 +563,7 @@ a:hover{
     padding: 2;
 }
 
-/* Ready to Ride */
+/*--------------------------------------------- Page 8 - Ready to Ride---------------------------------------------*/
 
 .ready_to_ride {
     display: flex;
@@ -602,7 +612,7 @@ video {
 }
 
 
-/* Contact Us */
+/*--------------------------------------------- Page 9 - Contact Us---------------------------------------------*/
 
 .contact-us {
     display: flex;
@@ -613,36 +623,61 @@ video {
     text-align: center;
 }
 
+.contact-col {
+    flex: 1; /* Use flex: 1 for equal distribution */
+    max-width: 700px; /* Set a max width for better alignment */
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+}
 
+/* Inner title styling */
 .inner h1 {
     color: #ff6900;
     font-size: 3rem;
     padding: 2px;
-    margin-top: 20px;
+    margin: 20px 0 10px; /* Simplified margin */
+}
+
+/* Contact info styling */
+.contact-info h5 {
+    color: #ff6900;
+    font-size: 1.5rem;
+    padding: 2px;
     margin-bottom: 10px;
 }
 
-.contact-col {
-    flex: 10%;
-    max-width: 70%;
-    box-sizing: border-box;
-    padding: 15px;
-    text-align: left;
+.contact-info h6 {
+    font-size: 1rem;
+    padding: 4px;
+    margin-bottom: 10px;
 }
 
-#email {
+.contact-info p {
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.btn-email {
     background-color: black;
     border: none;
     cursor: pointer;
 }
 
-#email:hover {
-    background-color: #ff6900;
+.btn-email p {
+    color: #ff6900;
     padding: 2px;
-    border-radius: 40px;
+    font-size: 15px;
 }
 
-/* Map */
+.btn-email p:hover {
+    color: #ffffff;
+}
+
+
+/*--------------------------------------------- Map ---------------------------------------------*/
+
 #map {
     height: 10rem;
     padding: 1px;
@@ -657,11 +692,12 @@ iframe {
 }
 
 
-/* Footer */
+/*--------------------------------------------- Footer ---------------------------------------------*/
+
 footer {
     background-color: rgba(0, 0, 0, 0.67); /* Slightly more readable */
     color: white;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column; /* Change to column to stack items */
     align-items: center; /* Center items horizontally */
@@ -669,8 +705,8 @@ footer {
 
 .footer-logo {
     color: #ff6900;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 5px;
+    font-size: 1.2rem;
     pointer-events: none;
     text-align: center;
     text-transform: uppercase;
@@ -679,14 +715,14 @@ footer {
 
 .footer-text {
     font-size: 10px;
-    margin-bottom: 0;
     text-align: center; /* Center text */
 }
 
 .footer-list {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 10px 0; /* Add margin for spacing */
+    text-align: center;
 }
 
 .footer-list li {
@@ -712,7 +748,7 @@ footer {
 
 .footer-icons li {
     margin-right: 10px;
-    padding: 5px 20px;
+    padding: 5px;
 }
 
 .footer-icons a {
@@ -729,7 +765,7 @@ footer {
 }
 
 
-/* BACK TO TOP BUTTON */
+/*--------------------------------------------- BACK TO TOP BUTTON ---------------------------------------------*/
 
 .top {
     text-decoration: none;

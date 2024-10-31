@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-<!--Velolab Version 5.1  DATE: 23.11.2024-->
+<!--/*Velolab Version 5.1  DATE: 31.10.2024
+ADJUSTED WHO ARE WE SECTION TO BE MORE RESPONSIVE AND BE MORE READABLE ON MOBILE DEVICES, CENTERED, GET IN TOUCH SECTION AND FOOTER  */
+-->
 
 <html>
     <head>
@@ -23,7 +25,7 @@
                 <li><a href="#what-our-clients-say">What Our Clients Say</a></li>
                 <li><a href="#coaching-options">Coaching Options</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
-                <li><a href="https://home.trainingpeaks.com/login.aspx" target="_blank">Login</a></li>
+                <li><a href="https://home.trainingpeaks.com/login.aspx" target="_blank" class="login-btn">Login</a></li>
             </ul>
         </nav>
 
@@ -38,6 +40,7 @@
                 </div>
             </div>
             <ul class="menu-links">
+                <li><a href="#our-mission">Our Mission</a></li>
                 <li><a href="#who-are-we">Who Are We</a></li>
                 <li><a href="#what-our-clients-say">What Our Clients Say</a></li>
                 <li><a href="#coaching-options">Coaching Options</a></li>
@@ -79,28 +82,41 @@
         </section>
 
         <!--Who Are We-->
+        
+        <!---ADJUSTED WHO ARE WE SECTION TO BE MORE RESPONSIVE AND BE MORE READABLE ON MOBILE-->
         <section id="who-are-we">
-            <div class="who-are-we">
-                
-                <h1>Who Are We</h1>
+            <div class="about-us">
 
-                <div class="profile-wrapper">
-                    <div class="micheal-jones">
-                        <img src="./images/Michael_Jones_Pic.jpg" alt="Michael Jones Photo"/>
-                        <h2>Micheal Jones</h2>
+                <div class="inner">
+                    <h1>Who Are We</h1>
 
-                        <p>Michael has been competing in national and provincial road cycling events since the age of 23. During this time he has podiumed at nationals & provincials in South Africa in both road and time trial cycling disciplines and in road at New Zealand nationals. He has had the privilege to represent New Zealand in the 2015 and 2016 UCI Grand Fondo World Amateur Cycling Championships.<br><br>
-                        During his years of racing at Elite level he was also studying and then later working full time, so he understands what is required to gain the most within limited time constraints.
-                        Michael has undertaken Level 1 and 2 BikeNZ Cycling Coaching courses and uses the knowledge and 8 years of coaching experience, in conjunction with his training, racing and technical experience, to provide individualized training programmes.</p>
-                    </div>
-                    
-                    <div class="john-rich">
-                        <img src="./images/John_Rich_Pic.jpg" alt="Michael Jones Photo"/>
-                        <h2>John Rich</h2>
+                    <div class="border"></div>
 
-                        <p>John has a solid academic background, holding a degree in recreation management, and a Masters of Applied Science with honours in recreation management from Lincoln University. He has also undertaken Level 1 and 2 BikeNZ Cycling Coaching courses. John has also been coaching cycling for 8 years, and competing in road cycling for over 20 years.<br><br>
-                        John currently competes at masters level and over the years has achieved good finishes at most of New Zealand’s better known cycling races. He also regularly competes in endurance running events. He has a particular interest in nutrition and sports psychology, and their value to athletes of any ability.
-                        He currently coaches road cycling at all levels, including masters, juniors, male and female, and also works with Paralympic hand cyclists, providing individualized training programmes.</p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-us-text">
+                                <img src="images\Michael_Jones_Pic.jpg" alt="Michael">
+                                <div class="coach-name">Michael Jones</div>
+                                <p>Michael has been competing in national and provincial road cycling events since the age of 23. During this time he has podiumed at nationals & provincials in South Africa in both road and time trial cycling disciplines and in road at New Zealand nationals. He has had the privilege to represent New Zealand in the 2015 and 2016 UCI Grand Fondo World Amateur Cycling Championships.
+                                    <br><br>
+                                    During his years of racing at Elite level he was also studying and then later working full time, so he understands what is required to gain the most within limited time constraints.
+                                    <br><br>
+                                    Michael has undertaken Level 1 and 2 BikeNZ Cycling Coaching courses and uses the knowledge and 8 years of coaching experience, in conjunction with his training, racing and technical experience, to provide individualized training programmes.</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="about-us-text">
+                                    <img src="images\John_Rich_Pic.jpg" alt="John">
+                                    <div class="coach-name">John Rich</div>
+                                    <p>John has a solid academic background, holding a degree in recreation management, and a Masters of Applied Science with honours in recreation management from Lincoln University. He has also undertaken Level 1 and 2 BikeNZ Cycling Coaching courses. John has also been coaching cycling for 8 years, and competing in road cycling for over 20 years.
+                                        <br><br>
+                                        John currently competes at masters level and over the years has achieved good finishes at most of New Zealand’s better known cycling races. He also regularly competes in endurance running events. He has a particular interest in nutrition and sports psychology, and their value to athletes of any ability.
+                                        <br><br>
+                                        He currently coaches road cycling at all levels, including masters, juniors, male and female, and also works with Paralympic hand cyclists, providing individualized training programmes.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,7 +176,6 @@
                                 <p>"Training is the bridge that connects potential with performance; it equips us with the tools to thrive in an ever-evolving business landscape."</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -262,8 +277,8 @@
                                 <div>
                                     <h5>Phone</h5>
                                     <h6>Coaches Contact Details</h6>
-                                    <p>John Rich: 027 4902 632</p>
-                                    <p>Michael Jones: 027 3100 527</p>
+                                    <p>John Rich:<br> 027 4902 632</p>
+                                    <p>Michael Jones:<br> 027 3100 527</p>
                                 </div>
                             </div>
                         </div>
@@ -272,7 +287,7 @@
                                 <i class="fa-solid fa-envelope"></i>
                                 <div>
                                     <h5>Email</h5>
-                                    <button id="email" target="_blank"><p>enquiries@velolab.co.nz</p></button>
+                                    <button id="email" target="_blank" class="btn-email"><p>enquiries@velolab.co.nz</p></button>
                                 </div>
                             </div>
                         </div>

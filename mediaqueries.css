@@ -8,15 +8,14 @@
         display: flex;
     }
 
+    .profile-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     /*Testimonials*/
     .col{
         flex: 100%;
         max-width: 80%;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .col{
-        flex: 100%;
     }
 }
