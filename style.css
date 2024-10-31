@@ -1,5 +1,5 @@
-/*Velolab Version 5.2  DATE: 31.10.2024
-FIXED BROKEN CONTACT US LINKS  
+/*Velolab Version 5.3  DATE: 1.11.2024
+FIXED REMAINING PAGES THAT DIDN'T RESPOND WELL TO MOBILE SCREENS, AND ADDED COPYRIGHT TO FOOTER + STYLING  
 */
 
 /*--------------------------------------------- CSS INDEX ---------------------------------------------*/
@@ -762,6 +762,20 @@ footer {
 
 .footer-icons a:last-child {
     margin-right: 0;
+}
+
+.footer-text p {
+    padding: 2px 0 1px 0;
+    letter-spacing: 2px;
+}
+
+
+.footer-text a {
+    color: white;
+}
+
+.footer-text a:hover {
+    color: #ff6900;
 }
 
 

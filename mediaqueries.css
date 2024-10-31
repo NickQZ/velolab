@@ -7,15 +7,96 @@
     #hamburger-nav {
         display: flex;
     }
-
-    .profile-wrapper {
+    /*--------------------------------------------- Page 1 - Hero Page ---------------------------------------------*/
+    .hero_pic_container {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+        flex-direction: column; /* Stack children vertically */
     }
+
+    .hero_pic_container img{
+        max-width: 100%;
+        max-height: 100%;
+        align-items: right;
+        z-index: 0; 
+        border-radius: 50px;
+        height: 40%;
+    }
+
+    .text_page1 {
+        flex: 100%;
+        max-width: 40%;
+    }
+
+    .text_page1 h1 {
+        font-size: 2.5rem;
+        text-align: left;
+        max-width: fit-content;
+    }
+
+    .text_page1 h2 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .btn-pg1 {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 2px 0;
+    }
+
+    /*--------------------------------------------- Our Mission--------------------------------------------- */
+
+    .mission_pic_container {
+        display: flex;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+        flex-direction: column; /* Stack children vertically */
+    }
+
+    .mission_pic_container img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50px;
+        height: 40%;
+    }
+
+    .text_page2 {
+        flex: 100%;
+        max-width: 100%; /* Adjusted for centering */
+        text-align: left; 
+        margin: 0 auto; /* Centers the block */
+        padding-right: 50%;
+        height: 35%;
+        width: 100%;
+    }
+
+    .text_page2 h1 {
+        font-size: 2.5rem;
+        text-align: left; 
+        max-width: fit-content; /* Adjust as needed */
+    }
+
+    .text_page2 p {
+        font-size: 1rem;
+        text-align: justify; /* You can change this to center if preferred */
+    }
+
 
     /*Testimonials*/
     .col{
         flex: 100%;
         max-width: 80%;
     }
+
+
+
+    /*--------------------------------------------- Contact Us---------------------------------------------*/
+    .profile-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
 }
