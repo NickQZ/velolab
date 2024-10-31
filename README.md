@@ -19,7 +19,8 @@ I have been tasked with developing a new, modern looking website for the company
 Before my new website was created the orignal design is acredited to:
 
 Copyright © Developed by Techland Design
-Documentation
+
+## Documentation
 
 Current Site: Home Page:
 
