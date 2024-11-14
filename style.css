@@ -1,5 +1,8 @@
-/*Velolab Version 5.5  DATE: 1.11.2024
-FIXED HAMBURGER BUG NOT WORKING CORRECTLY ON MOBILE*/
+
+/*Velolab Version 6  DATE: 14.11.2024
+Deleted Photos from What our clients say as per client request, 
+Also added clients choosen photos to be used in place of previous photos*/
+
 
 /*--------------------------------------------- CSS INDEX ---------------------------------------------*/
 
@@ -238,7 +241,8 @@ a:hover{
 }
 
 .hero_pic_container img {
-    max-width: 70%;
+    max-width: 80%;
+    object-fit: cover;
     padding: 10px;
     max-height: 100%;
     align-items: right;
@@ -303,6 +307,7 @@ a:hover{
 
 .mission_pic_container img {
     max-width: 70%;
+    object-fit: cover;
     padding: 1rem;
     max-height: 100%;
     align-items: right;
@@ -479,7 +484,8 @@ a:hover{
 }
 
 .service img {
-    width: 100%;
+    width: 60%;
+    object-fit: cover;
     height: 300px;
     border-radius: 30px;
 }
