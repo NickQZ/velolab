@@ -4,7 +4,7 @@
 
 ## WEBSITE LIVE
 
-- https://velolab.co.nz/
+-[ https://velolab.co.nz/](https://nickqz.github.io/velolab/)
   
 ## Velolab Website
 
