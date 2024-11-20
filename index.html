@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-
-<!--/*Velolab Version 6  DATE: 14.11.2024
-Deleted Photos from What our clients say as per client request, 
-Also added clients choosen photos to be used in place of previous photos*/
+<!-- Velolab Version 6.2  DATE: 18.11.2024
+Added Rest of client quotes onto a scroller bar with animated transition and a small amount of JS.*/
 -->
 
 <html>
@@ -123,52 +121,37 @@ Also added clients choosen photos to be used in place of previous photos*/
         <!--What Our Clients Say-->
         <section id="what-our-clients-say">
             <div class="testimonials">
-                
                 <div class="inner">
                     <h1>What Our Clients Say</h1>
-
                     <div class="border"></div>
-
-                    <div class="row">
-                        <div class="col">
+                    <div class="slide">
+                        <div class="testimonial-container">
                             <div class="testimonial">
-                                <div class="name">John Smith</div>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p>"Investing in training is investing in our future; the skills we gain today empower us to excel tomorrow."</p>
+                                <div class="name">Johnathan</div>
+                                <p><em>"Velolab has been instrumental in helping me achieve my cycling goals since 2013. Their professionalism and expertise set them apart, and I would confidently recommend Velolab to cyclists of all levels, from beginners to elites."</em></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="name">Paul</div>
+                                <p><em>"Mike has been a very supportive and knowledgeable coach for me. He has coached me to two National age group titles and a number of placings.<br><br>In 2022 we set a programme that enabled me to complete a Tour of Southland. Mike is an accomplished coach who understands the challenges that athletes who have jobs, families and other commitments face."</em></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="name">Alan</div>
+                                <p><em>"I have been coached by the Velolab team for several years, during this time I have achieved more than I could have hoped for, the Velolab team deliver in all aspects of coaching, coupled with excellent performance feedback, motivation, and personal accountability"</em></p>
                             </div>
                         </div>
-
-                        <div class="col">
+                        <!-- Duplicate containers for infinite effect -->
+                        <div class="testimonial-container">
                             <div class="testimonial">
-                                <div class="name">Jane Doe</div>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p>"The knowledge we acquire through training not only enhances our capabilities but also transforms challenges into opportunities."</p>
+                                <div class="name">Johnathan</div>
+                                <p><em>"Velolab has been instrumental in helping me achieve my cycling goals since 2013. Their professionalism and expertise set them apart, and I would confidently recommend Velolab to cyclists of all levels, from beginners to elites."</em></p>
                             </div>
-                        </div>
-
-                        <div class="col">
                             <div class="testimonial">
-                                <div class="name">Jane Doe</div>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p>"Training is the bridge that connects potential with performance; it equips us with the tools to thrive in an ever-evolving business landscape."</p>
+                                <div class="name">Paul</div>
+                                <p><em>"Mike has been a very supportive and knowledgeable coach for me. He has coached me to two National age group titles and a number of placings.<br><br>In 2022 we set a programme that enabled me to complete a Tour of Southland. Mike is an accomplished coach who understands the challenges that athletes who have jobs, families and other commitments face."</em></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="name">Alan</div>
+                                <p><em>"I have been coached by the Velolab team for several years, during this time I have achieved more than I could have hoped for, the Velolab team deliver in all aspects of coaching, coupled with excellent performance feedback, motivation, and personal accountability"</em></p>
                             </div>
                         </div>
                     </div>
@@ -227,8 +210,6 @@ Also added clients choosen photos to be used in place of previous photos*/
                         <p><i>Minimum Membership Length: 4 Months</i></p>
                         <a href="#contact-us" class="btn-pricing">Join Now</a>
                     </div>
-
-
                 </section>
 
         <!--Ready to Ride?-->
@@ -307,7 +288,7 @@ Also added clients choosen photos to be used in place of previous photos*/
                         <li><a href="#our-mission">Our Mission</a></li>
                         <li><a href="#who-are-we">Who Are We</a></li>
                         <li><a href="#what-our-clients-say">What Our Clients Say</a></li>
-                        <li><a href="#our-services">Coaching Options</a></li>
+                        <li><a href="#coaching-options">Coaching Options</a></li>
                         <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
                 </div>
@@ -317,7 +298,7 @@ Also added clients choosen photos to be used in place of previous photos*/
                     </ul>
                 </div>
                 <div class="footer-text">
-                    <p>© 2024 Velolab. All rights reserved. <br><i> Website Designed & Created by <a href="https://nickqz.github.io/My-Portfolio/" target="_blank">Nicholas Jones</a></i></p>
+                    <p>© 2024 Velolab. All rights reserved. <br><em> Website Designed & Developed by <a href="https://nickqz.github.io/My-Portfolio/" target="_blank">Nicholas Jones</a></em></p>
             </div>
         </footer>
 
@@ -334,7 +315,7 @@ Also added clients choosen photos to be used in place of previous photos*/
             document.querySelector('.hamburger-menu').addEventListener('click', () => {
                 menu.classList.toggle("open");
                 icon.classList.toggle("open");
-            });
+            });  
 
             // Back to Top Button
             const button = document.getElementById('back-to-top');
@@ -363,6 +344,15 @@ Also added clients choosen photos to be used in place of previous photos*/
                 event.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             };
+            // Infinite Scroll Animation for Testimonials
+            const slide = document.querySelector('.slide');
+            const testimonialContainers = document.querySelectorAll('.testimonial-container');
+
+            // Clone the content to create the illusion of infinity
+            testimonialContainers.forEach(container => {
+                const clonedContainer = container.cloneNode(true);
+                slide.appendChild(clonedContainer);
+            });
         });
         </script> 
         

@@ -1,7 +1,6 @@
 
-/*Velolab Version 6  DATE: 14.11.2024
-Deleted Photos from What our clients say as per client request, 
-Also added clients choosen photos to be used in place of previous photos*/
+/*Velolab Version 6.2  DATE: 18.11.2024
+Added Rest of client quotes onto a scroller bar with animated transition and a small amount of JS.*/
 
 
 /*--------------------------------------------- CSS INDEX ---------------------------------------------*/
@@ -414,40 +413,98 @@ a:hover{
 
 /*--------------------------------------------- Page 4 - Testimonials--------------------------------------------- */
 
+#what-our-clients-say {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #111111f0;
+    overflow: hidden; /* Hide overflowing content */
+}
+
 .testimonials {
-    padding: 20px 0;
-    background-color: #1b1b1b;
-    color: #434343;
+    position: relative;
+    width: 100%;
+}
+
+.testimonials .inner {
     text-align: center;
 }
 
-.testimonial {
-    background-color: #fff;
-    padding: 30px;
-}
-
-.testimonial img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.name {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 20px 0;
-}
-
-.stars {
+.testimonials .name {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
     color: #ff6900;
-    margin: 20px 0;
 }
 
-.testimonial p {
-    font-size: 14px;
-    color: #282727;
-    margin: 0;
+.testimonials .border {
+    width: 160px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 26px auto;
 }
+
+.testimonials .slide {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hide anything outside the bounds */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: row; /* Align testimonials horizontally */
+    width: max-content; /* Let the container expand to fit its children */
+    animation: infinite-scroll 20s linear infinite; /* Apply animation */
+}
+
+.testimonial {
+    padding: 20px;
+    margin: 10px;
+    width: 400px; /* Fixed width for each testimonial */
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Infinite scroll animation for horizontal movement */
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0); /* Start at the leftmost position */
+    }
+    to {
+        transform: translateX(-100%); /* Reset to the starting position to loop again */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for smaller mobile screens */
+    .testimonial {
+        width: 250px; /* Or any smaller value that fits better */
+    }
+
+    .testimonial-container {
+        animation: infinite-scroll 20s linear infinite;
+    }
+
+    .testimonial .name {
+        font-size: 1em;
+    }
+
+    .testimonial p {
+        font-size: 0.85em;
+    }
+
+    .testimonials .border {
+        width: 80px;
+        height: 3px;
+    }
+}
+
+
 
 /*--------------------------------------------- Page 5 - Coaching Options--------------------------------------------- */
 
