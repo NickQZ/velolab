@@ -1,6 +1,6 @@
 
-/*Velolab Version 7  DATE: 21.11.2024
-Client requested another quote to be added and to change the text alignment to the left and adjust the word spacing.*/
+/*Velolab Version 7.1  DATE: 21.11.2024
+Adjusted speed of the testimonials as per client request, also fix the alignment of the text and layout of the Coaching options page for better uniformity across different screen sizes.*/
 
 
 /*--------------------------------------------- CSS INDEX ---------------------------------------------*/
@@ -335,7 +335,6 @@ a:hover{
 }
 
 /*--------------------------------------------- Page 3 - Who Are We--------------------------------------------- */
-
 .about-us {
     padding: 20px 0;
     background-color: #0b0b0b;
@@ -411,6 +410,23 @@ a:hover{
     color: #ff6900;
 }
 
+@media (max-width: 768px) {
+    .row {
+        justify-content: center; /* Ensure that columns are centered */
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        padding: 0 10px; /* Add a bit of padding between columns for spacing */
+    }
+
+    .about-us img {
+        height: auto; /* Adjust image height for smaller screens */
+    }
+}
+
 /*--------------------------------------------- Page 4 - Testimonials--------------------------------------------- */
 
 #what-our-clients-say {
@@ -418,11 +434,6 @@ a:hover{
     padding: 50px 0;
     background-color: #111111f0;
     overflow: hidden; /* Hide overflowing content */
-}
-
-.testimonials {
-    position: relative;
-    width: 100%;
 }
 
 .testimonials .inner {
@@ -460,7 +471,7 @@ a:hover{
     display: flex;
     flex-direction: row; /* Align testimonials horizontally */
     width: max-content; /* Let the container expand to fit its children */
-    animation: infinite-scroll 45s linear infinite;
+    animation: infinite-scroll 80s linear infinite;
 }
 
 .testimonial {
@@ -468,7 +479,6 @@ a:hover{
     margin: 10px;
     height: 360px;
     width: 500px; /* Fixed width for each testimonial */
-    border: 1px solid #000000;
     border-radius: 8px;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -514,8 +524,6 @@ a:hover{
     }
 }
 
-
-
 /*--------------------------------------------- Page 5 - Coaching Options--------------------------------------------- */
 
 .services {
@@ -525,39 +533,50 @@ a:hover{
     text-align: center;
 }
 
-.border{
+.border {
     width: 160px;
     height: 5px;
     background-color: #ffffff;
     margin: 26px auto;
 }
 
-.service-col{
-    flex: 50%;
-    max-width: 80%;
-    box-sizing: border-box;
-    padding: 15px;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures the cards are spaced evenly */
+    gap: 20px; /* Adds space between the cards */
 }
 
-.service-col:hover {
-    transform: translateY(-50px);
-    transition: 0.2s ease-in-out;
+.service-col {
+    flex: 1 1 48%; /* Ensures equal width with flexible growth */
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .service {
     background-color: #cec8c8;
     padding: 20px;
     border-radius: 20px;
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Ensures the card fills available space */
 }
 
 .service img {
     width: 60%;
     object-fit: cover;
-    height: 300px;
+    height: 200px; /* Adjust the image height to maintain uniformity */
     border-radius: 30px;
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Horizontally center the image */
 }
 
-.service-title h3{
+.service-title h3 {
     font-size: 20px;
     text-transform: uppercase;
     color: #ff6900;
@@ -565,14 +584,34 @@ a:hover{
 }
 
 .service ul {
-    font-size: 20px;
+    font-size: 16px;
     color: #282727;
     display: grid;
-    gap: 20px;
-    padding-left: 40px;
+    gap: 10px;
+    padding-left: 20px;
     text-align: left;
     list-style-type: square;
 }
+
+
+/* Hover effect for service column */
+.service-col:hover .service {
+    transform: translateY(-10px);
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .service-col {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 30px;
+    }
+
+    .service img {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+}
+
 
 /*--------------------------------------------- Page 6 - Pricing--------------------------------------------- */
 
