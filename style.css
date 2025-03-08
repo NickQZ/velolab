@@ -297,7 +297,6 @@ a:hover{
 .mission_pic_container {
     display: flex;
     justify-content: left;
-    align-items: center;
     position: relative;
     height: 100vh;
     text-align: left;
@@ -331,7 +330,7 @@ a:hover{
 
 .text_page2 p {
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
 }
 
 /*--------------------------------------------- Page 3 - Who Are We--------------------------------------------- */

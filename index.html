@@ -263,15 +263,22 @@ Adjusted speed of the testimonials as per client request, also fix the alignment
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-col">
-                            <div class="contact-info">
-                                <i class="fa-solid fa-envelope"></i>
-                                <div>
-                                    <h5>Email</h5>
-                                    <button id="email" target="_blank" class="btn-email"><p>enquiries@velolab.co.nz</p></button>
+                            <div class="contact-col">
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div>
+                                        <h5>Email</h5>
+                                        <p>John Rich:</p>
+                                        <button id="email1" target="_blank" class="btn-email">
+                                            <p>roseward@xtra.co.nz</p>
+                                        </button>
+                                        <p>Michael Jones:</p>
+                                        <button id="email2" target="_blank" class="btn-email">
+                                            <p>micky.ejones68@gmail.com</p>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -336,15 +343,26 @@ Adjusted speed of the testimonials as per client request, also fix the alignment
                 }
             };
 
-            // Email Button
-            const mailtoButton = document.getElementById('email');
-            mailtoButton.addEventListener('click', function() {
-                const email = 'enquiries@velolab.co.nz';
-                const subject = encodeURIComponent('Velolab Inquiry');
-                const body = encodeURIComponent('I would like to inquire about...'); 
-                const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
-                window.location.href = mailtoLink;
-            });
+                // Email Button for John Rich
+                const mailtoButton1 = document.getElementById('email1');
+                mailtoButton1.addEventListener('click', function() {
+                    const email = 'roseward@xtra.co.nz';
+                    const subject = encodeURIComponent('Velolab Inquiry');
+                    const body = encodeURIComponent('I would like to inquire about...'); 
+                    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+                    window.location.href = mailtoLink;
+                });
+
+                // Email Button for Michael Jones
+                const mailtoButton2 = document.getElementById('email2');
+                mailtoButton2.addEventListener('click', function() {
+                    const email = 'micky.ejones68@gmail.com';
+                    const subject = encodeURIComponent('Velolab Inquiry');
+                    const body = encodeURIComponent('I would like to inquire about...'); 
+                    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+                    window.location.href = mailtoLink;
+                });
+
 
             // Smooth Scroll Back to Top
             button.onclick = function(event) {
